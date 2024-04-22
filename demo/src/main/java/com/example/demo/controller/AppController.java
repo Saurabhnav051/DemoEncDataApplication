@@ -20,7 +20,7 @@ public class AppController {
 //	}
 //	
 	
-	@GetMapping("/callme")
+	@GetMapping("/callme2")
 	public RedirectView testCallme()
 	{
 		RedirectUrl  encRequest=new RedirectUrl ();
@@ -32,6 +32,22 @@ public class AppController {
 		//return new RedirectView(encRequest.redirectCall2("LfoP5","12","",""));
 	
 	  
+	
+	}
+	
+	
+	@PostMapping("/callme")
+	public RedirectView testCallme2(HttpServletRequest req)
+	{
+		RedirectUrl  encRequest=new RedirectUrl ();
+		
+//		return encRequest.redirectWithRedirectAttributes();
+		//return encRequest.redirectcallredirect(req);
+		//"https://uat.sbiepay.sbi/secure/AggregatorHostedListener?EncryptTrans="+URLEncoder.encode(aggregatorHosted.getEncryptTrans(),"UTF-8")+"&EncryptbillingDetails="+URLEncoder.encode(aggregatorHosted.getEncryptbillingDetails(),"UTF-8")+"&EncryptshippingDetais="+URLEncoder.encode(aggregatorHosted.getEncryptshippingDetais(),"UTF-8")+"&EncryptpaymentDetails="+aggregatorHosted.getEncryptpaymentDetails()+"&merchIdVal="+aggregatorHosted.getMerchIdVal()+"&hiddenMerchantOrderNo="+aggregatorHosted.getHiddenMerchantOrderNo()+"&neftRtgsMobileNumber="+aggregatorHosted.getNeftRtgsMobileNumber()+"&neftRtgsEmailId="+aggregatorHosted.getNeftRtgsEmailId()+"&neftChallanExpDt="+aggregatorHosted.getNeftChallanExpDt()+"&cashCustomerName="+aggregatorHosted.getCashCustomerName()+"&Submit=Proceed Transaction"
+		
+		//return new RedirectView(encRequest.redirectCall2("LfoP5","12","",""));
+	
+		return encRequest.redirectcallredirect(req);
 	
 	}
 	
