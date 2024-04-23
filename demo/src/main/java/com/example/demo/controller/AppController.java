@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
 
-import com.epay.encdata.controller.*;
+import com.epay.encdata.controller.RedirectUrl;
+
+//import com.epay.encdata.controller.*;
 import java.util.Base64;
 
 import javax.servlet.http.HttpServletRequest;
